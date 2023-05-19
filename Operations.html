@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<title> Operations </title>
+<body>
+	<script>
+		function add() {
+    			var num1, num2;
+    			num1 = Number(document.form1.txtNum1.value);
+    			num2 = Number(document.form1.txtNum2.value);
+    			document.form1.txtSum.value = num1 + num2;
+		}
+
+		function sub () {
+			var num1, num2;
+			num1 = Number(document.form1.txtNum1.value);
+    			num2 = Number(document.form1.txtNum2.value);
+    			document.form1.txtSum.value = num1 - num2;
+		}
+
+		function mult() {
+			var num1, num2;
+			num1 = Number(document.form1.txtNum1.value);
+    			num2 = Number(document.form1.txtNum2.value);
+    			document.form1.txtSum.value = num1 * num2;
+		}
+
+		function divide() {
+			var num1, num2;
+			num1 = Number(document.form1.txtNum1.value);
+    			num2 = Number(document.form1.txtNum2.value);
+    			document.form1.txtSum.value = num1 / num2;
+		}
+
+	</script>
+
+		<form name = "form1" >
+		<font size = "5"> Enter operand 1: </font>
+    		<input type="text" name = "txtNum1" size = 8><br><br>
+    		
+		<font size = "5">Enter operand 2: </font>
+   		<input type = "text" name="txtNum2" size = 8><br><br>
+   		
+		<input type = "button" value = "Add" onclick = "add()">
+		<input type = "button" value = "Sub" onclick = "sub()">
+		<input type = "button" value = "Multiply" onclick = "mult()">
+		<input type = "button" value = "Divide" onclick = "divide()"><br><br>
+		
+   		<input type = "text" name = "txtSum">
+		
+		<p><font size = "3"><a href = "index.html"><font color = "#0000EE"> Back </font></a></font></p>
+
+</form>
+</body>
+</html>
